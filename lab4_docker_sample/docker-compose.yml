@@ -49,13 +49,12 @@ services:
   #    tail -f /dev/null
 
       
-  phppgadmin:
-    image: "bitnami/phppgadmin:7.13.0"
+  adminer:
+    image: adminer
     ports:
       - "8080:8080"
-    # - '443:8443'
     environment:
-      DATABASE_HOST: postgres_db
+      ADMINER_DEFAULT_SERVER: postgres_db
     depends_on:
       - postgres_db
 

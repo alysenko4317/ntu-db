@@ -21,6 +21,7 @@ To open a psql prompt in that container, run the following in another terminal:
 
 To select current database use:
    \c <database_name>  (as an example: \c lab2)
+   HINT: \l displays list of databases created
 
 On that stage the database have already been created and you can check that all is going well using the following command:
    \dt  (will list all created tables)
