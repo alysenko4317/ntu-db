@@ -10,7 +10,8 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt .
 RUN python3 -m pip install -r requirements.txt --no-cache-dir
 
-# copy project tree
-COPY ./lab3 .
+# copy project tree;
+# coment this out for debug if you want to run code that lies outside of container and don't forget also change the .yml file
+#COPY ./lab3 .
 
 #CMD ["python", "cli.py"]

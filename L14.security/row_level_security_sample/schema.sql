@@ -1,3 +1,10 @@
+-- Optional: Create the database if it doesn't exist (uncomment if needed)
+CREATE DATABASE artist_database;
+
+-- Optional: Switch to the database (uncomment if running from a script that allows commands like this)
+\c artist_database;
+
+
 CREATE TABLE artists (
     -- More about identity column:
     -- https://www.2ndquadrant.com/en/blog/postgresql-10-identity-columns/
